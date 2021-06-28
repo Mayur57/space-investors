@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Space Invaders";
-  src: url("/assets/font/Space-Invaders.woff2") format("woff2"),
-    url("/assets/font/Space-Invaders.woff") format("woff");
+  src: url("./assets/font/Space-Invaders.woff2") format("woff2"),
+    url("./assets/font/Space-Invaders.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,12 +9,12 @@
 
 @font-face {
   font-family: "Gilroy-m";
-  src: url("/assets/font/Gilroy-Bold.eot");
-  src: url("/assets/font/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
-    url("/assets/font/Gilroy-Bold.woff2") format("woff2"),
-    url("/assets/font/Gilroy-Bold.woff") format("woff"),
-    url("/assets/font/Gilroy-Bold.ttf") format("truetype"),
-    url("/assets/font/Gilroy-Bold.svg#Gilroy-Bold") format("svg");
+  src: url("./assets/font/Gilroy-Bold.eot");
+  src: url("./assets/font/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/Gilroy-Bold.woff2") format("woff2"),
+    url("./assets/font/Gilroy-Bold.woff") format("woff"),
+    url("./assets/font/Gilroy-Bold.ttf") format("truetype"),
+    url("./assets/font/Gilroy-Bold.svg#Gilroy-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -22,13 +22,13 @@
 
 @font-face {
   font-family: "Gilroy-m";
-  src: url("/assets/font/Gilroy-Medium.eot");
-  src: url("/assets/font/Gilroy-Medium.eot?#iefix")
+  src: url("./assets/font/Gilroy-Medium.eot");
+  src: url("./assets/font/Gilroy-Medium.eot?#iefix")
       format("embedded-opentype"),
-    url("/assets/font/Gilroy-Medium.woff2") format("woff2"),
-    url("/assets/font/Gilroy-Medium.woff") format("woff"),
-    url("/assets/font/Gilroy-Medium.ttf") format("truetype"),
-    url("/assets/font/Gilroy-Medium.svg#Gilroy-Medium") format("svg");
+    url("./assets/font/Gilroy-Medium.woff2") format("woff2"),
+    url("./assets/font/Gilroy-Medium.woff") format("woff"),
+    url("./assets/font/Gilroy-Medium.ttf") format("truetype"),
+    url("./assets/font/Gilroy-Medium.svg#Gilroy-Medium") format("svg");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -104,19 +104,19 @@ a {
 }
 
 .investor {
-  content: url("/assets/img/assets-03.png");
+  content: url("./assets/img/assets-03.png");
 }
 
 .doge-shooter {
-  content: url("/assets/img/assets-02.png");
+  content: url("./assets/img/assets-02.png");
 }
 
 .laser {
-  content: url("/assets/img/assets-04.png");
+  content: url("./assets/img/assets-04.png");
 }
 
 .boom {
-  content: url("/assets/img/assets-05.png");
+  content: url("./assets/img/assets-05.png");
 }
 
 .about-heading {

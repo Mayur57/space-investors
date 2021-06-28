@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<!-- https://i.ibb.co/zHkYpBy/art-series-01.png -->
+
+<html lang="en">
+  <head>
+    <!-- Twitter  Cards Meta Data -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@mayurbhoii" />
+      <meta name="twitter:creator" content="@mayurbhoii" />
+      <meta name="twitter:title" content="Space Investors" />
+      <meta name="twitter:description" content="Remake of the iconic arcade game–Space Invaders" />
+      <meta name="twitter:image" content="https://i.ibb.co/zHkYpBy/art-series-01.png" />
+
+      <!-- Metadata for OpenGraph -->
+      <meta property="og:image" content="https://i.ibb.co/zHkYpBy/art-series-01.png" />
+      <meta property="og:title" content="Space Investors" />
+      <meta property="og:description" content="Remake of the iconic arcade game–Space Invaders" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://mayurbhoi.com/space-investors/" />
+
+    <!-- Favicon Data -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/img/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/img/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="msapplication-config" content="/assets/img/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Generic Meta Data-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Remake of the iconic arcade game–Space Invaders" />
+    <meta name="keywords" content="mayur, bhoi, HTML, CSS, JavaScript, games, arcade, gaming" />
+    <meta name="author" content="Mayur Bhoi" />
+    <title>Space Investors</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to access this website.</noscript>
+
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <img
+      class="header"
+      src="../assets/img/assets-02.png"
+      style="height: 2em; margin-bottom: 25px"
+    />
+
+    <center>
+      <p style="font-size: 1.5em; margin: 0px">SPACE INVESTORS</p>
+      <p class="creator" style="font-size: 0.75em; margin-top: 5px">
+        created by <a href="https://mayurbhoi.com">mayur bhoi</a>
+      </p>
+    </center>
+
+    <center><h1 class="results">PLAYING</h1></center>
+    <div class="grid"></div>
+    <h1 class="score"><center>BTC cashed: 0 btc</center></h1>
+
+    <div style="display: flex; justify-content: center; margin-top: 40px">
+      <button
+        onclick="moveShooterLeft()"
+        type="button"
+        style="font-style: bolder; font-size: 20px"
+      >
+        ←
+      </button>
+
+      <button onclick="shootTouch()" type="button">
+        <img
+          class="header"
+          src="../assets/img/assets-06.png"
+          style="height: 2.9em; margin: auto"
+        />
+      </button>
+
+      <button
+        onclick="moveShooterRight()"
+        type="button"
+        style="font-style: bolder; font-size: 20px"
+      >
+        →
+      </button>
+    </div>
+
+    <h1 class="about-heading"><center>Controls</center></h1>
+    <div class="about-sec">
+      <p class="about">
+        Use 'A' and 'D' keys to navigate and 'W' to fire. If you are using a
+        mobile device use the buttons above.
+      </p>
+    </div>
+
+    <h1 class="about-heading"><center>About</center></h1>
+    <div class="about-sec">
+      <p class="about">
+        A mildly amusing remake of the iconic arcade game Space Invaders but
+        with a topical twist. The website was literally made in a couple of
+        hours as I was bored and may have severe problems. If you find any bugs
+        and/or have a fix for it, consider contributing to the
+        <a href="https://github.com/mayur57/space-investors">GitHub repo</a>.
+      </p>
+      <p class="about">
+        PS: Space Invaders is the best arcade game of all time, this is not a
+        debate, and I will not be entertaining any arguments.
+      </p>
+    </div>
+
+    <p id="footer" class="footer">&#169; 2021 Mayur Bhoi</p>
+    <script src="js/script.js"></script>
+  </body>
+</html>

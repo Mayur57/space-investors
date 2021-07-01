@@ -32,15 +32,40 @@
  *
  * */
 
+function encrypt(
+  message = "",
+  key = ""
+) {
+  var message = CryptoJS.AES.encrypt(message, key);
+  return message.toString();
+}
+
+function decrypt(
+  message = "",
+  key = ""
+) {
+  var code = CryptoJS.AES.decrypt(message, key);
+  var decryptedMessage = code.toString(CryptoJS.enc.Utf8);
+
+  return decryptedMessage;
+}
+
+/// WORKAROUND AND A VERY VERY BAD PRACTICE DON'T FUCKING DO IT
+ var token = decrypt(
+   "U2FsdGVkX19fN5oZ9Vii4zW2XDFueWWbmU8ggttujjJOmRhFzMMa5SmWJ2e2bkHjohTF1NhjlPgMSpyonj1K3w==",
+   "shut98128382the8923fuckup"
+ );
+
 /**
  * @params  none    None
  * @returns integer Number of commits made in the repository
  */
-
 async function getVersion() {
+
   const headers = {
-    Authorization: "Token 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",
+    Authorization: `Token ${token}`,
   };
+
   const owner = "Mayur57";
   const repo = "space-investors";
   let page = 1;
@@ -71,7 +96,7 @@ async function getVersion() {
  */
 async function getUpdateDate() {
   const headers = {
-    Authorization: "Token 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",
+    Authorization: `Token ${token}`,
   };
   const owner = "Mayur57";
   const repo = "space-investors";
@@ -86,8 +111,8 @@ async function getUpdateDate() {
   const result = await response.json();
 
   var date = result[0].commit.author.date;
-
-  return date.substring(0,10);
+  console.log(date)
+  return date;
 }
 
 /**
@@ -97,10 +122,14 @@ async function getUpdateDate() {
 async function makeFooter() {
   var version = await getVersion();
   var update = await getUpdateDate();
-  var subVersion = update.replaceAll("-", "").substring(2);
+  var subVersion = update.substring(9,19).replaceAll(":", "").substring(2);
 
-  var date = new Date(update)
-  const month = date.toLocaleString("default", { day: "2-digit", month: "short", year: "numeric" });
+  var date = new Date(update);
+  const month = date.toLocaleString("default", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  });
 
   update = month;
 

@@ -125,10 +125,21 @@ a {
 }
 
 #footer {
-  font-family: "Gilroy-m";
   margin-top: 60px;
   margin-bottom: 30px;
   opacity: 0.4;
+}
+
+#footer .versions {
+  font-family: "Gilroy-m";
+  font-size: 0.7em;
+  margin-bottom: 0px;
+}
+
+#footer .copyright {
+  margin-top: 10px;
+
+  font-family: "Gilroy-m";
 }
 
 button {
